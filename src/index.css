@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-lavender-50 text-slate-800 antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom delicate romantic styling */
+.romantic-gradient-bg {
+  background: radial-gradient(circle at 10% 20%, rgba(243, 236, 250, 0.8) 0%, rgba(250, 247, 253, 0.95) 90%);
+}
+
+.romantic-card-gradient {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 244, 254, 0.8) 100%);
+  backdrop-filter: blur(8px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #faf7fd;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7c0ee;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #be9be2;
+}
